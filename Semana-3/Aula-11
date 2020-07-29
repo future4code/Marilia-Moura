@@ -120,14 +120,17 @@ resposta: B. Não passa no teste quando o usuário insere um número Impar.
 
 // EXERCÍCIO 7
 
-// let filme1 = true
-// let filme2 = prompt("Qual gênero você que assistir?")
-
-// switch (filme1) {
+//  let filme1 = prompt("Qual genero voce quer assistir?")
+// let filme2=prompt("Quanto você pode pagar?
+// switch(filme1){
 // case "fantasia":
-//     console.log("")
-//       break
-//  } ... em andamento."
+// console.log("Bom  filme")
+// break
+//  case "<=15":
+// console.log("Bom filme!")
+// break
+// default:
+// console.log("Escolha outro filme  :(  ")}"
 "<!DOCTYPE html>
 <html lang="pt-BR">
 
