@@ -1,126 +1,130 @@
-// Interpretação de código 1
+// EXERCÍCIO 1
 
-// const bool1 = true
-// const bool2 = false
-// const bool3 = !bool2
+// const respostaDoUsuario = prompt("Digite o número que você quer testar")
+// const numero = Number(respostaDoUsuario)
 
-// let resultado = bool1 && bool2
-// console.log("a. ", resultado)
-
-/* resposta: a.false
- 
-Falso porque foi utilizado o operador E, que retorna o valor se, e somente se, os booleanos envolvidos
-também forem o mesmo valor.
-
-*/
-
-// resultado = bool1 && bool2 && bool3
-// console.log("b.", resultado)
-
-/* resposta: b. false
-
-Ocorre o mesmo que a questão anterior, existem dois valores true e um false, neste caso retorna false.
-    
-*/
-
-// resultado = !resultado && (bool1 || bool1)
-// console.log("c. ", resultado)
-
-/* resposta: c. true
- 
-Penso que seja porque o operador OU dá o valor true e o E também confirma, 
- uma vez que também temos o (!).
-
- */
-
-// console.log("e.", typeof resultado)
-
-/* resposta: boolean
-
- */
-
-// Interpretação de código 2
-
-// let array
-// console.log("a.", array)
-
-/* resposta: undefined
-
-não foi atribuido nenhum valor á vareável 
- 
-*/
-
-// array = null
-// console.log('b. ', array)
-
-/* resposta: null
-
-basicamente aconteceu o mesmo na questão anterior.
-
- */
-
-// array = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-// console.log('c. ', array.length)
-
-/* resposta: 11
-
-Usamos .length para descobrir o tamanho da lista,
-a quantidade de elementos.
-
- */
-
-// let i = 0
-// console.log('d. ', array[i])
-
-/* resposta: 3
-    
-Ele excluiu o número 3, por estar na posição [0]
-
- */
-
-// array[i + 1] = 19
-// console.log('e. ', array)
-
-/* resposta: (11) [3, 19, 5, 6, 7, 8, 9, 10, 11, 12, 13]
- 
-Excluiu o 4, [i+1] e adiciou o 19 como novo valor.
-
-*/
-
-// const valor = array[i + 6]
-// console.log('f. ', valor)
+// if (numero % 2 === 0) {
+// console.log("Passou no teste.")
+// } else {
+// console.log("Não passou no teste.")
+// }
 
 /*
-o valor que está na posição [6]
+resposta: A. Quando o usuário insere um número Par, ele passa no teste.
+Isso pq no IF indica que o resto tem que ser igual á 0.
+
+resposta: B. Não passa no teste quando o usuário insere um número Impar.
 */
 
-//  Exercícios de escrita de código - 1
+//-------------------------------------------------------------------------------------------------------------
 
-// const idade = prompt("Qual é a sua idade?")
-// const idadeMelhorAmiga = prompt("Qual é a idade da sua melhor amiga?")
+// EXERCÍCIO 2
 
-// let resposta = (idade) > (idadeMelhorAmiga)
-// let diferenca = Number(idade) - Number(idadeMelhorAmiga)
-// console.log("Sua idade é maior do que a da sua melhor amiga? " + resposta)
-// console.log("diferença de idade" + "", diferenca)
+// let fruta = prompt("Escolha uma fruta")
+// let preco
+// switch (fruta) {
+// case "Laranja":
+// preco = 3.5
+//  break
+// case "Maçã":
+// preco = 2.25
+// break
+// case "Uva":
+// preco = 0.30
+// break
+// case "Pêra":
+//  preco = 5.5
 
-// Exercícios de escrita - 2
+// BREAK PARA O ITEM c.
 
-// const par = prompt("Digite um número par")
-// let numeroPar = Number(par)
-// console.log(par % 2)
+// default:
+//    preco = 5
+//      break
+// }
+// console.log("O preço da fruta ", fruta, " é ", "R$ ", preco)
 
-/* resposta: c. Todos os números pares divididos por 2, resulta em 0.
+// resposta: A. Acredito que seja um programa para o cliente consultar os valores das respectivas frutas.
 
-   resposta: d. Quando insere um número ímpar, ele retorna número 1.
+// resposta: B. Se eu digitar"MAÇÃ" imprime o valor: 2.25
 
-*/
+// resposta: C. Retirando o "break", imprime o valor inteiro: 5
 
-// Exercícios de escrita - 3
+// ---------------------------------------------------------------------------------------------------------------
 
-let listaDeTarefas = []
-const tarefa1 = prompt("Primeira tarefa?")
-const tarefa2 = prompt("Segunda Tarefa?")
-const tarefa3 = prompt("Terceira tarefa?");
+// EXERCÍCIO 3
 
-[...]
+// const numero = Number(prompt("Digite o primeiro número."))
+
+// if (numero > 0) {
+// console.log("Esse número passou no teste")
+// let mensagem = "Essa mensagem é secreta!!!"
+// }
+// console.log(mensagem)
+
+
+// resposta: A. Primeira linha usa o Cast,transforma uma string para number. Consequentemente,guarda o valor"number".
+
+// resposta B. Quando digito 10, passo no teste, pq IF identifica como um número MAIOR que 0. -10 ReferenceError: mensagem is not defined.
+
+// resposta C. O erro ocorre pq não tenho a opção else, ele foi substítuido por let mensagem.
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+// EXERCÍCIO 4
+
+// const numero = Number(prompt("Digite sua idade."))
+
+// if (numero >= 18) {
+//  console.log("Você é maior, pode dirigir")
+// } else if (numero <= 18) {
+//  console.log("Você é menor, não pode dirigir!")
+// }
+
+//-----------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 5
+
+// let turnoDosAluno = (prompt("Digite a inicial do seu turno, 'M, V ou N'"))
+
+// if (turnoDosAluno === "M") {
+// console.log("Bom dia!")
+// } 
+// else if (turnoDosAluno === "V") {
+// console.log("Boa tarde!")
+// }
+// else if (turnoDosAluno = "N") {
+// console.log("Boa noite!")
+// }
+
+//--------------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 6
+
+// let turnoDosAluno = prompt("Digite a inicial o seu turno, 'M, V ou N'")
+
+// switch (turnoDosAluno) {
+// case "M":
+// console.log("Bom dia!")
+// break
+
+// case "V":
+// console.log("Boa tarde!")
+// break
+// case "N":
+// console.log("Boa noite")
+
+// }
+
+//--------------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 7
+
+// let filme1 = true
+// let filme2 = prompt("Qual gênero você que assistir?")
+
+// switch (filme1) {
+// case "fantasia":
+//     console.log("")
+//       break
+//  } ... em andamento.
