@@ -1,0 +1,151 @@
+"// EXERCÍCIO 1
+
+// const respostaDoUsuario = prompt("Digite o número que você quer testar")
+// const numero = Number(respostaDoUsuario)
+
+// if (numero % 2 === 0) {
+// console.log("Passou no teste.")
+// } else {
+// console.log("Não passou no teste.")
+// }
+
+/*
+resposta: A. Quando o usuário insere um número Par, ele passa no teste.
+Isso pq no IF indica que o resto tem que ser igual á 0.
+
+resposta: B. Não passa no teste quando o usuário insere um número Impar.
+*/
+
+//-------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 2
+
+// let fruta = prompt("Escolha uma fruta")
+// let preco
+// switch (fruta) {
+// case "Laranja":
+// preco = 3.5
+//  break
+// case "Maçã":
+// preco = 2.25
+// break
+// case "Uva":
+// preco = 0.30
+// break
+// case "Pêra":
+//  preco = 5.5
+
+// BREAK PARA O ITEM c.
+
+// default:
+//    preco = 5
+//      break
+// }
+// console.log("O preço da fruta ", fruta, " é ", "R$ ", preco)
+
+// resposta: A. Acredito que seja um programa para o cliente consultar os valores das respectivas frutas.
+
+// resposta: B. Se eu digitar"MAÇÃ" imprime o valor: 2.25
+
+// resposta: C. Retirando o "break", imprime o valor inteiro: 5
+
+// ---------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 3
+
+// const numero = Number(prompt("Digite o primeiro número."))
+
+// if (numero > 0) {
+// console.log("Esse número passou no teste")
+// let mensagem = "Essa mensagem é secreta!!!"
+// }
+// console.log(mensagem)
+
+
+// resposta: A. Primeira linha usa o Cast,transforma uma string para number. Consequentemente,guarda o valor"number".
+
+// resposta B. Quando digito 10, passo no teste, pq IF identifica como um número MAIOR que 0. -10 ReferenceError: mensagem is not defined.
+
+// resposta C. O erro ocorre pq não tenho a opção else, ele foi substítuido por let mensagem.
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+// EXERCÍCIO 4
+
+// const numero = Number(prompt("Digite sua idade."))
+
+// if (numero >= 18) {
+//  console.log("Você é maior, pode dirigir")
+// } else if (numero <= 18) {
+//  console.log("Você é menor, não pode dirigir!")
+// }
+
+//-----------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 5
+
+// let turnoDosAluno = (prompt("Digite a inicial do seu turno, 'M, V ou N'"))
+
+// if (turnoDosAluno === "M") {
+// console.log("Bom dia!")
+// } 
+// else if (turnoDosAluno === "V") {
+// console.log("Boa tarde!")
+// }
+// else if (turnoDosAluno = "N") {
+// console.log("Boa noite!")
+// }
+
+//--------------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 6
+
+// let turnoDosAluno = prompt("Digite a inicial o seu turno, 'M, V ou N'")
+
+// switch (turnoDosAluno) {
+// case "M":
+// console.log("Bom dia!")
+// break
+
+// case "V":
+// console.log("Boa tarde!")
+// break
+// case "N":
+// console.log("Boa noite")
+
+// }
+
+//--------------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 7
+
+//  let filme1 = prompt("Qual genero voce quer assistir?")
+// let filme2=prompt("Quanto você pode pagar?
+// switch(filme1){
+// case "fantasia":
+// console.log("Bom  filme")
+// break
+//  case "<=15":
+// console.log("Bom filme!")
+// break
+// default:
+// console.log("Escolha outro filme  :(  ")}"
+"<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <title> Condicionais</title>
+
+</head>
+
+<body>
+
+</body>
+
+</html>"
+"index.css"
