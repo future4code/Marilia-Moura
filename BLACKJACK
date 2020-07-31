@@ -1,0 +1,150 @@
+"<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Future4 - Blackjack</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script type="application/javascript" src="naoMexer.js"></script>
+    <script defer type="application/javascript" src="nossoJogo.js"></script>
+    <script defer type="application/javascript" src="desafio.js"></script>
+  </body>
+</html>"
+"style.css"
+"/**
+ * EXEMPLO DE UTILIZAÇÃO DA 'comprarCarta'
+ * 
+ * 
+    const carta = comprarCarta(); // Sorteia uma carta. Por exemplo, o rei de ouros
+    
+    console.log(carta.texto) // imprime o texto da carta. Exemplo: "K♦️" (indica "K" de ouros)
+    console.log(carta.valor) // imprime o valor da carta (um número). Exemplo: 10 (dado que "K" vale 10)
+ * 
+ * 
+ * 
+ */
+
+// EXERCÍCIO 1
+
+// let = prompt("Bem vindo(a) ao jogo BLACKJACK!")
+// console.log()
+
+// resposta: Deveria imprimir o que está dentro do prompt, mas pula direto pra fuction :/
+
+//--------------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 2
+
+
+
+// function prompt() {
+// if (confirm("Quer iniciar uma nova rodada?")) {
+// const X = t(),
+// a = t(),
+// r = t(),
+// e = t(),
+// u = X.o + a.o,
+// c = r.o + e.o;
+// console.log("Usuário - cartas:", X.a, a.a, "- pontuação", u),
+//  console.log("Computador - cartas:", r.a, e.a, "- pontuação", c),
+// c === u ? console.log("Empate!") : c > u ? console.log("O computador ganhou!") : console.log("O usuário ganhou!")
+// } 
+// else
+// console.log("O jogo acabou!")
+// }
+
+// function a() {
+//  if (confirm("Quer iniciar uma nova rodada?")) {
+// const Z = [t(), t()],
+//  a = [t(), t()];
+// let r = 0,
+// e = confirm("Suas cartas são " + Z[0].a + " " + o[1].a + ". A carta revelada do computador é " + a[0].a + ". Deseja comprar mais uma carta?");
+// for (; e;) {
+//  const u = t();
+// o.push(u),
+//   r = 0;
+// for (let a of o)
+// r += a.o;
+// if (r < 21) {
+//  let t = "";
+// for (let a of o)
+// t += a.a + " ";
+// e = confirm("Suas cartas são " + t + ". A carta revelada do computador é " + a[0].a + ". Deseja comprar mais uma carta?")
+// }
+// else
+//  e = !1
+// }
+// r = 0;
+// for (let a of o)
+// r += a.o;
+// let u = 0;
+// for (let o of a)
+//  u += o.o;
+// let c = r <= 21 && u <= r;
+// for (; c;) {
+//  const o = t();
+// a.push(o),
+//  u = 0;
+// for (let o of a)
+//  u += o.o;
+// c = r <= 21 && u <= r
+// }
+// resultado = r > 21 ? "O computador ganhou!" : u > 21 ? "O usuário ganhou!" : u > r ? "O computador ganhou!" : u < r ? "O usuário ganhou!" : "Empate!";
+// let s = "",
+//  n = "";
+// for (let a of o)
+//  s += a.a + " ";
+// for (let o of a)
+//  n += o.a + " ";
+// alert("Suas cartas são " + s + ". Sua pontuação é " + r + ". As cartas do computador são " + n + ". A pontuação do computador é " + u + ". " + resultado)
+//}
+// else
+//  console.log("O jogo acabou!")
+//}
+
+//function t() {
+//  const o = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"][Math.floor(13 * Math.random())];
+// let a;
+// return {
+//  a: o + ["♦️", "♥️", "♣️", "♠️"][Math.floor(4 * Math.random())],
+// o: a = "A" === o ? 11 : "J" === o || "Q" === o || "K" === o ? 10 : Number(o)
+// }
+// }"
+"/**
+* NÃO MEXAM NESTE AQUIVO EM HIPÓTESE ALGUMA
+*/
+
+function comprarCarta() {
+  // Cria array de cartas
+  const cartas = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+
+  // Cria array de naipes
+  const naipes = ["♦️", "♥️", "♣️", "♠️"]
+
+  // Sorteia uma carta
+  const numero = cartas[Math.floor(Math.random() * 13)]
+
+  // Sorteia um naipe
+  const naipe = naipes[Math.floor(Math.random() * 4)]
+
+  let valor
+
+  // Verifica se é uma das letras e coloca o valor correspondente na variável valor
+  if (numero === "A") {
+    valor = 11
+  } else if (numero === "J" || numero === "Q" || numero === "K") {
+    valor = 10
+  } else { // Se nao for uma das letras, só converte a string para número
+    valor = Number(numero)
+  }
+
+  // Cria um objeto da carta com as propriedades que vamos precisar: texto e valor
+  const carta = {
+    texto: numero + naipe,
+    valor: valor
+  }
+
+  return carta
+}"
