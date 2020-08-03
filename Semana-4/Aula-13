@@ -1,0 +1,157 @@
+"<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js"></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <title>FUNÇOES</title>
+</head>
+
+<body>
+
+</body>
+
+</html>"
+"index.css"
+"// EXEMPLO 1 
+
+// function dizOi() {
+//     console.log("oi")
+// }
+
+// dizOi()
+
+
+// EXEMPLO 2
+
+// ------------------------------------------- EXEMPLO DE FUNCAO NOMEADA -----------------
+
+// const resultado1 = somaDoisNumeros(5, 6)
+// const resultado2 = somaDoisNumeros(10, 20)
+
+// console.log(resultado1)
+// console.log(resultado2)
+
+// function somaDoisNumeros(numero1, numero2) {
+//     const soma = numero1 + numero2
+//     return soma
+// }
+
+
+
+
+// ------------------------------------------- EXEMPLO DE FUNCAO NÃO NOMEADA -----------------
+
+
+// const somaDoisNumeros = function(numero1, numero2) {
+//     const soma = numero1 + numero2
+//     return soma
+// }
+
+// const resultado1 = somaDoisNumeros(5, 6)
+// const resultado2 = somaDoisNumeros(10, 20)
+
+// console.log(resultado1)
+// console.log(resultado2)
+
+
+
+// ------------------------------------------- EXEMPLO DE ARROW FUNCTION (FUNCAO FLECHA) -----------------
+
+
+// const somaDoisNumeros = (numero1, numero2) => {
+//     const soma = numero1 + numero2
+//     return soma
+// }
+
+
+// const resultado1 = somaDoisNumeros(5, 6)
+// const resultado2 = somaDoisNumeros(10, 20)
+
+// console.log(resultado1)
+// console.log(resultado2)
+
+
+
+
+// ------------------------------------------- EXERCÍCIO 1 -----------------
+
+// function verificaArray(arrayDeParametro) {
+//     for (let elemento of arrayDeParametro) {
+//         console.log(elemento)
+//     }
+
+//     return arrayDeParametro.length 
+// }
+
+
+// ------------------------------------------- EXERCÍCIO 2 -----------------
+
+
+// const verificaTamanhoDoArray = (arrayDeParametro) => {
+//     for (let elemento of arrayDeParametro) {
+//         console.log(elemento)
+//     }
+
+//     return arrayDeParametro.length
+// }
+
+// const profs = ["chijo", "paulinha", "sot", "caio", "severo"]
+
+// const tamanhoDoArray = verificaTamanhoDoArray(profs)
+
+//-------------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 1
+
+// function minhaFuncao(variavel) {
+//  return variavel * 5
+// }
+
+// (minhaFuncao(2))
+// (minhaFuncao(10))
+
+// resposta: A. Ele imprime 10 e abaixo 50. No caso ocorre uma multiplicação
+
+/* resposta: B. Se eu retirar somente o console.log, eu digito qualquer valor e ele retorna
+o valor digitado, agora se eu deixo somente a função como mostra acima, dá erro.
+Ele diz: minhafuncao(...) is not a function at.
+ 
+*/
+
+//--------------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 2
+
+// let arrayDeNomes = ["Darvas", "Goli", "João", "Paulinha", "Soter"];
+
+// const outraFuncao = function(array) {
+// for (let i = 0; i < 2; i++) {
+// console.log(array[i])
+//     }
+// }
+
+// outraFuncao(["Amanda", "Caio"])
+
+// resposta: A. O console apresenta os dois primeiros nomes da lista. Afinal é o que está sendo pedido no código.
+
+// resposta: B. Os nomes " Amanda e Caio", porque o arrayDeNomes é volátil, se fosse const não receberia da mesma forma.
+
+//---------------------------------------------------------------------------------------------------------------------
+
+// EXERCÍCIO 3
+
+//const metodo = (array) => {
+//  let chamoDoQueEuQuiser = [];
+
+// for (let x of array) {
+//  if (x % 2 === 0) {
+//    chamoDoQueEuQuiser.push(x * x)
+// }
+// }
+
+// return chamoDoQueEuQuiser;
+// }"
